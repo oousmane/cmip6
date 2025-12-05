@@ -151,8 +151,8 @@ cmip6_dl <-
                     south = aoi$ymin,
                     disableProjSubset = "on",
                     horizStride = 1,
-                    time_start = paste0(year, "-01-01"),
-                    time_end = paste0(as.integer(year) + 1, "-01-01"),
+                    time_start = paste0(year, "-01-01T12:00:00"),
+                    time_end = paste0(year, "-12-31T12:00:00"),
                     timeStride = 1,
                     # addLatLon = TRUE,
                     accept = "netcdf4-classic"
